@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Preço - Cesta Básica</title>
+    <link rel="stylesheet" href="trabalho.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pesquisa de Preço - Cesta Básica</h1>
+        <p>Insira os preços dos produtos abaixo:</p>
+
+        <form id="formPrecos">
+            <div class="tabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Supermercado / Produto</th>
+                            <th>Arroz</th>
+                            <th>Feijão</th>
+                            <th>Leite</th>
+                            <th>Óleo</th>
+                            <th>Ovo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Carrefour</td>
+                            <td><input type="number" step="0.01" id="preco-0-0" /></td>
+                            <td><input type="number" step="0.01" id="preco-0-1" /></td>
+                            <td><input type="number" step="0.01" id="preco-0-2" /></td>
+                            <td><input type="number" step="0.01" id="preco-0-3" /></td>
+                            <td><input type="number" step="0.01" id="preco-0-4" /></td>
+                        </tr>
+                        <tr>
+                            <td>Guanabara</td>
+                            <td><input type="number" step="0.01" id="preco-1-0" /></td>
+                            <td><input type="number" step="0.01" id="preco-1-1" /></td>
+                            <td><input type="number" step="0.01" id="preco-1-2" /></td>
+                            <td><input type="number" step="0.01" id="preco-1-3" /></td>
+                            <td><input type="number" step="0.01" id="preco-1-4" /></td>
+                        </tr>
+                        <tr>
+                            <td>Mundial</td>
+                            <td><input type="number" step="0.01" id="preco-2-0" /></td>
+                            <td><input type="number" step="0.01" id="preco-2-1" /></td>
+                            <td><input type="number" step="0.01" id="preco-2-2" /></td>
+                            <td><input type="number" step="0.01" id="preco-2-3" /></td>
+                            <td><input type="number" step="0.01" id="preco-2-4" /></td>
+                        </tr>
+                        <tr>
+                            <td>Prezunic</td>
+                            <td><input type="number" step="0.01" id="preco-3-0" /></td>
+                            <td><input type="number" step="0.01" id="preco-3-1" /></td>
+                            <td><input type="number" step="0.01" id="preco-3-2" /></td>
+                            <td><input type="number" step="0.01" id="preco-3-3" /></td>
+                            <td><input type="number" step="0.01" id="preco-3-4" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button type="button" onclick="calcularCesta()">Calcular Cesta Mais Barata</button>
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="../JavaScript/script.js"></script>
+</body>
+
+</html>
