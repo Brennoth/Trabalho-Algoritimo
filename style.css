@@ -21,6 +21,32 @@ body {
 strong{
     font-weight: 900;
 }
+.alunos{
+    display: flex;
+    width: 60rem;
+    padding: 2rem;
+    background-color: #5C4CB6;
+    border-radius: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    color: white;
+    margin: 0 auto 4rem;
+}
+.hero{
+    margin-left: 1rem;
+}
+.hero b{
+    font-weight: 900;
+}
+.hero p{
+    font-size: 1.6rem;
+}
+.hero p,b{
+    margin-top: 0.5rem;
+}
+.bn{
+    padding-right: 0.5rem;
+    border-right: 2px solid #B983FF;
+}
 .main h1 {
     font-size: 4.8em;
     text-align: center;
@@ -99,5 +125,15 @@ strong{
     }
     .container{
         flex-wrap: wrap;
+    }
+    .alunos{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    .bn{
+        border: none;
+        border-bottom: 2px solid #B983FF;
+        padding-bottom: 1rem;
     }
 }
